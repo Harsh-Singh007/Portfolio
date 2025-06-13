@@ -1,157 +1,818 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="header">
-     <a href="#" class="logo">Portfolio</a>
-     <i class='bx bx-menu' id="menu-icon" ></i>
-     <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-     </nav>   
-</header>
-<!--home section-->
-<section class="home" id="home">
-    <div class="home-content">
-        <h3>Hello ,It's me</h3>
-        <h1>Harsh Singh</h1>
-        <h3>And I'm <span class="multiple-text">Full Stack Web Developer</span></h3>
-        <p>
-            I bring a blend of technical expertise and creative problem solving to every project. Let's build something extraordinary together!         <div class="social-media">
-        <a href="https://instagram.com/h_a_r_s_h.rajput?igshid=ZGUzMzM3NWJiOQ=="><i class='bx bxl-instagram' ></i></a>
-        <a href="https://twitter.com/Harsh93148409?t=XNgahdQAK6OlqcSXvGnsDQ&s=08"><i class='bx bxl-twitter' ></i></a>
-        <a href="https://www.linkedin.com/in/harsh-singh-626449235"><i class='bx bxl-linkedin' ></i></a>
-        <a href="https://github.com/Harsh-Singh007"><i class='bx bxl-github'></i></i></a>
-         </div>
-         <!-- <a href="#" class="btn">Download CV</a>     -->
-    </div>
-    <div class="home-img">
-        <img src="images\p2.png" alt="">
-    </div>
-</section>
-<!--about section-->
-<section class="about" id="about">
-<div class="about-img">
-    <img src="images\p1.png" alt="aboutimg">
-</div>
-<div class="about-content">
-    <h2 class="heading">About <span>Me</span></h2>
-    <h3>Full Stack Web Developer</h3>
-    <p> As a Full Stack Web Developer, well-versed in a wide range of programming languages, including but not limited to HTML, CSS, JavaScript and Python. Proficient in frontend frameworks such as React.js ,crafts seamless and responsive user interfaces that deliver an exceptional user experience.
-        On the backend,is a master of server-side technologies, working with Node.js,and Java to build scalable and efficient systems. Database management is a forte, with expertise in both relational (e.g., MySQL) and NoSQL databases (e.g., MongoDB).
-        <br><b>Project Management:</b>
-        Just a coder but a meticulous project manager. With a keen eye for detail,excels in gathering requirements, planning project timelines, and executing tasks with precision. Proficient in version control systems like Git,ensures seamless collaboration with team members, fostering a collaborative and productive development environment.
-    </p>
-   <!--<a href="#" class="btn">Read More</a>--> 
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Singh Portfolio</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</section>
+  <body>
+    <main>
+<aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="https://avatars.githubusercontent.com/u/111278270?v=4"
+              alt="harsh singh"
+              width="80"
+              style="border-radius: 30px"
+            />
+          </figure>
 
-<!--services section-->
-<section class="services" id="services">
-    <h2 class="heading"><span>Services</span></h2>
-    <div class="services-container">
-        <div class="services-box">
-            <i class='bx bx-code-alt' ></i>
-            <h3>Web development</h3>
-            <p><a href="https://www.geeksforgeeks.org/web-development/" target="_blank" font="white"></a> Encompasses a wide range of services and activities related to creating and maintaining websites and web applications.</p>
- <a href="https://www.geeksforgeeks.org/web-development/" class="btn">Read More</a>         </div>
-        <div class="services-box">
-            <i class='bx bxs-paint'></i>
-            <h3>Web Design</h3>
-            <p>Create visually appealing and user-friendly website designs tailored to the client's needs and branding requirements.</p>
- <a href="https://www.interaction-design.org/literature/topics/web-design" class="btn">Read More</a>    </div>
-    </div>
-</section>
+          <div class="info-content">
+            <h1 class="name" title="harsh singh">Harsh Singh</h1>
 
-<!--Project section-->
-<section class="projects" id="projects">
-<h2 class="heading"> Latest<span> Project</span></h2>
-<div class="projects-container">
-    <div class="projects-box">
-    <img src="./images/project1.png" alt="">
-    <div class="projects-layer">
-        <h4>Online Voting System</h4>
-        <p>
-            Provide E-voting facilities 
-        </p>
-        <a href="https://github.com/Harsh-Singh007/Project_voting.git"><i class='bx bx-link' > GitHub</i></a>
-     
-    </div>
-    
-    </div>
-    <div class="projects-box">
-        <img src="./images/project2.png" alt="">
-        <div class="projects-layer">
-            <h4>VendorVista</h4>
+            <p class="title">Web developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:harsh.65004@example.com" class="contact-link"
+                  >harsh.65004@example.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+917428155853" class="contact-link"
+                  >+91 7428155853</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Gurugram, Haryana, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/harsh-singh-626449235/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://github.com/Harsh-Singh007" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/h_a_r_s_h.rajput/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Lets Connect</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
             <p>
-              MultiVebodr Ecommerce site
+              I'm a Web Developer specializing in JavaScript, React, and Cloud
+              Computing. I enjoy building modern, responsive web applications
+              and solving real-world problems with clean and scalable code.
             </p>
-            <a href="https://github.com/Harsh-Singh007/Multivendor-site"><i class='bx bx-link' > GitHub</i></a>
-         
-        </div>
-        
-        </div>
-        <div class="projects-box">
-            <img src="./images/p3.png" alt="">
-            <div class="projects-layer">
-                <h4>Bliss Care</h4>
-                <p>
-                    Women Health Care Website
+
+            <p>
+              My focus is on creating user-friendly and visually appealing web
+              experiences. I work extensively with the MERN stack, manage
+              full-stack projects, and use version control tools like GitHub to
+              collaborate efficiently. I aim to deliver functional and elegant
+              solutions that align with both technical and business goals.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="images/icon-design.svg
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web design</h4>
+
+                  <p class="service-item-text">
+                    The most modern and high-quality design made at a
+                    professional level.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    High-quality development of sites at the professional level.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Parul University</h4>
+
+                <span>Expected Graduation: 2026</span>
+
+                <p class="timeline-text">M.C.A. - Cloud Computing - PICA</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Parul University</h4>
+
+                <span>2024</span>
+
+                <p class="timeline-text">
+                  BCA - Full Stack Web Developer (Full Time) | CGPA : 9.29 / 10
                 </p>
-                <a href="https://github.com/Harsh-Singh007/Bliss-Care"><i class='bx bx-link' > GitHub</i></a>
-             
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  GOVT BOYS SSS GHITORNI NEW DELHI
+                </h4>
+
+                <span>2021</span>
+
+                <p class="timeline-text">12th | CBSE | Percentage: 75 / 100</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  C R OASIS CONVENT SCHOOL NAJAFGARH NEW DELHI
+                </h4>
+
+                <span>2019</span>
+
+                <p class="timeline-text">
+                  10th | CBSE | Percentage: 60.66 / 100
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
             </div>
-            
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">TCA | Technology</h4>
+
+                <span>Internship</span>
+
+                <p class="timeline-text">
+                  As a Web Developer Intern at TCA, I worked on a multi-vendor
+                  e-commerce platform using the MERN stack (MongoDB, Express.js,
+                  React, Node.js).<br />
+                  •Developing core features for a seamless vendor and customer
+                  experience.<br />
+                  •Collaborating with designers, product managers, and
+                  developers to build a scalable application.<br />
+                  •Managing MongoDB for efficient data storage and retrieval.<br />
+                  •Troubleshooting and resolving bugs for smooth
+                  functionality.<br />
+                  This internship has enhanced my full-stack web development
+                  skills and provided hands-on experience in building complex
+                  web applications
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Intel</h4>
+
+                <span>Intel® Unnati Industrial Training – Summer 2023</span>
+
+                <p class="timeline-text">
+                  During the Intel Unnati Summer Industrial Training, we
+                  identified a critical need to optimize the operation of
+                  Automated Teller Machines (ATMs) using a Finite State Machine
+                  (FSM) approach. ATMs are vital components of the banking
+                  sector, providing essential services such as cash withdrawals,
+                  deposits, balance inquiries, and fund transfers. The current
+                  ATM systems often face challenges in managing states and
+                  transitions efficiently, leading to operational inefficiencies
+                  and increased downtime
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web design</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">MERN Stack</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AWS</h5>
+                  <data value="60">60%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Git Version Control</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <div class="filter-select-box">
+              <button class="filter-select" data-select></button>
             </div>
-            <div class="projects-box">
-                <img src="./images/p4.png" alt="">
-                <div class="projects-layer">
-                    <h4>VenueVibe</h4>
-                    <p>
-                       Hall Booking System
-                    </p>
-                    <a href="https://github.com/Harsh-Singh007/VenueVibe"><i class='bx bx-link' > GitHub</i></a>
-                 
-                </div>
-                
-                </div>
-</div>
-</section>
 
-<!--Project section-->
-<section class="contact" id="contact">
-<h2 class="heading">Contact <span>Me</span></h2>
-<h1>
-    <p><a href="mailto: harsh.65004@gmail.com">harsh.65004@gmail.com</a></p>
-    
-</h1>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Project_voting">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p1.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">EVoting System</h3>
+
+                  <p class="project-category">Provide E-voting facilities </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Multivendor-site">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/project2.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">VendorVista</h3>
+
+                  <p class="project-category">MultiVendor Ecommerce site</p>
+                </a>
+              </li>
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Bliss-Care">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p3.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Bliss Care</h3>
+
+                  <p class="project-category"> Women Health Care Website</p>
+                </a>
+              </li>
+
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/VenueVibe">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p4.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">VenueVibe</h3>
+
+                  <p class="project-category"> Venue Booking System</p>
+                </a>
+              </li>
+
+
+                <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Anime-stream ">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p5.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Anime Stream</h3>
+
+                  <p class="project-category">Online Anime Stream Site</p>
+                </a>
+              </li>
+
+
+ <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/google-sheet-clone ">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p6.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Google Sheet Clone</h3>
+
+                  <p class="project-category">Google Sheets clone  supporting real-time editing and formula calculations.</p>
+                </a>
+              </li>
 
 
 
-</section>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/GitHub-profile-viewer ">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-<footer class="footer">
-    <div class="footer-text">
-            <p>Copyright &copy; 2023 by Harsh | All Rights Reserved.</p>
-    </div>
-    <div class="footer-icontop">
-        <a href="#home"><i class='bx bx-chevrons-up'></i></a>
-    </div>
-</footer>
+                    <img
+                      src="images/p7.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                  <h3 class="project-title">GitHub Profile Viewer</h3>
+
+                  <p class="project-category">Check github user profile detail</p>
+                </a>
+              </li>
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Employee-management-portal ">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p8.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Employee Manage Portal</h3>
+
+                  <p class="project-category">Manage Employee only(add,update delete)</p>
+                </a>
+              </li>
+
+
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/budget-management-system">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p9.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Budget Management System</h3>
+
+                  <p class="project-category">Manage income and expenses give proper budget summary</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/Harsh-Singh007/Quize-Generator">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="images/p11.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Quize Generator</h3>
+
+                  <p class="project-category">Generate Q/A type Quize and give final result</p>
+                </a>
+              </li>
+
+            </ul>
+          </section>
+        </article>
+
+        
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="lets connect">
+          <header>
+            <h2 class="h2 article-title">Lets Connect</h2>
+          </header>
+
+          <div
+            style="
+              margin-top: 20px;
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              font-size: 16px;
+            "
+          >
+            <!-- GitHub -->
+            <a
+              href="https://github.com/Harsh-Singh007"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#FFD700"
+                viewBox="0 0 24 24"
+                style="margin-right: 10px"
+              >
+                <path
+                  d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.29 3.438 9.773 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.082-.729.082-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.996.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.333-5.466-5.932 0-1.31.467-2.381 1.236-3.221-.124-.303-.536-1.521.117-3.176 0 0 1.008-.323 3.3 1.23a11.52 11.52 0 0 1 3.003-.404c1.02.005 2.047.137 3.003.404 2.289-1.553 3.294-1.23 3.294-1.23.655 1.655.243 2.873.12 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.625-5.479 5.922.432.372.816 1.102.816 2.222v3.293c0 .32.216.694.825.576C20.565 22.27 24 17.788 24 12.5 24 5.87 18.63.5 12 .5z"
+                />
+              </svg>
+              GitHub
+            </a>
+
+            <!-- LeetCode -->
+            <a
+              href="https://leetcode.com/u/harshsingh1309/"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#FFD700"
+                viewBox="0 0 24 24"
+                style="margin-right: 10px"
+              >
+                <path
+                  d="M21.398 2.602a2.21 2.21 0 0 0-3.127 0l-8.55 8.55 2.66 2.662 8.55-8.55a2.21 2.21 0 0 0 .467-2.662zM2.602 21.398a2.21 2.21 0 0 0 3.127 0l8.55-8.55-2.662-2.662-8.55 8.55a2.21 2.21 0 0 0-.467 2.662z"
+                />
+              </svg>
+              LeetCode
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/harsh-singh-626449235/"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#FFD700"
+                viewBox="0 0 24 24"
+                style="margin-right: 10px"
+              >
+                <path
+                  d="M20.451 20.452h-3.554V14.88c0-1.328-.027-3.041-1.853-3.041-1.853 0-2.137 1.447-2.137 2.942v5.671H9.354V9.5h3.414v1.496h.049c.476-.899 1.637-1.847 3.368-1.847 3.6 0 4.263 2.369 4.263 5.448v5.855zM5.337 8.004a2.062 2.062 0 1 1 0-4.123 2.062 2.062 0 0 1 0 4.123zm1.777 12.448H3.56V9.5h3.554v10.952zM22.225 0H1.771C.791 0 0 .771 0 1.725v20.55C0 23.229.791 24 1.771 24h20.451C23.207 24 24 23.229 24 22.275V1.725C24 .771 23.207 0 22.225 0z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://app.netlify.com/teams/harsh-singh007/projects"
+              target="_blank"
+              style="
+                text-decoration: none;
+                color: white;
+                display: flex;
+                align-items: center;
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#FFD700"
+                viewBox="0 0 256 256"
+                style="margin-right: 10px"
+              >
+                <path
+                  d="M128 0L240 128L128 256L16 128L128 0ZM128 24L40 128L128 232L216 128L128 24ZM124 72H132V132H124V72ZM124 144H132V152H124V144Z"
+                />
+              </svg>
+              Netlify
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
     <script src="script.js"></script>
-</body>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
