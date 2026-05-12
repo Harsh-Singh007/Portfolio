@@ -2043,9 +2043,10 @@ textarea.form-input::-webkit-resizer {
   font-size: 16px;
   line-height: 1.8;
   margin-bottom: 12px;
-  color: var(--light-gray);
+  color: #f1f1f1;   /* text color */
 }
 
 .skills-column strong {
-  color: var(--white-2);
+  color: #ffffff;   /* heading bold color */
+  font-weight: 600;
 }
