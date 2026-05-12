@@ -2026,3 +2026,26 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 }
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.skills-column p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  color: var(--light-gray);
+}
+
+.skills-column strong {
+  color: var(--white-2);
+}
